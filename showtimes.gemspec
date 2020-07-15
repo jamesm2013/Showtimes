@@ -5,13 +5,13 @@ require "showtimes/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "showtimes"
-  spec.version       = Showtimes::VERSION
+  spec.version       = "0.2.3"
   spec.authors       = ["'james Johnson'"]
   spec.email         = ["'2013matthew2013@gmail.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = {"Movie Showtimes Near You"}
+  spec.description   = "Enter your zipcode, and see what movies you can go see today."{}
+  spec.homepage      = "https://github.com/jamesm2013/showtimes"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -38,4 +38,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "nokogiri", ">= 0"
+  spec.add_development_dependency "pry", "~> 0.10.4"
+  
+  spec.add_runtime_dependency "nokogiri", ">= 0"
+  spec.add_runtime_dependency "pry", "~> 0.10.4"
 end
